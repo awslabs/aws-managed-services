@@ -14,7 +14,7 @@ setup(
         "dataclasses==0.6",
         "distro==1.4.0",
         "PrettyTable==0.7.2",
-        "PyInstaller==3.4",
+        "PyInstaller==3.6",
     ]
     # Maybe include dev dependencies in a txt file
 )
