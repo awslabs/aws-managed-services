@@ -1,0 +1,34 @@
+{
+  "Get-FreeDiskSpace": {
+    "Enabled": true,
+    "MinimumSizeInGB": 10,
+    "DriveLetter": "C"
+   },
+   "Get-DHCPSetting": {
+     "Enabled": true
+   },
+   "Get-RequiredDrivers": {
+     "Enabled": true,
+     "PVBoundary": "8.2",
+     "ENABoundary": "1.0"
+   },
+   "Get-SysprepStatus": {
+     "Enabled": true
+   },
+   "Get-IAMRole": {
+     "Enabled": true
+   },
+   "Get-RequiredAgents": {
+     "Enabled": true
+   },
+   "Get-WMIHealth": {
+     "Enabled": true
+   },
+   "Get-OperatingSystem": {
+    "Enabled": true
+   },
+   "Get-InstalledSoftware": {
+    "Enabled": true,
+    "UnsupportedSoftware":["McAfee", "VMWare Tools", "AVG", "Trend Micro Deep Security Agent"]
+  }
+}

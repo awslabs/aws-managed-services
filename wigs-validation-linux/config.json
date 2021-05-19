@@ -1,0 +1,29 @@
+{
+  "EnhancedNetworking": {
+    "enabled": true
+  },
+  "FreeDiskSpace": {
+    "enabled": true,
+    "min_gb": 5
+  },
+  "ThirdPartySoftware": {
+    "enabled": true,
+    "custom_software_list": null
+  },
+  "SSHConfiguration": {
+    "enabled": true
+  },
+  "RepoAccess": {
+    "enabled": true
+  },
+  "InstanceProfile": {
+    "enabled": true,
+    "role_name": "customer-mc-ec2-instance-profile"
+  },
+  "SSMAgent": {
+    "enabled": true
+  },
+  "OperatingSystem": {
+    "enabled": true
+  }
+}
