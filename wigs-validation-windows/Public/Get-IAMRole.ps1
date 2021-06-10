@@ -1,4 +1,7 @@
-﻿function Get-IAMRole {
+﻿# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+function Get-IAMRole {
     <#
     .SYNOPSIS
     Validates that the instance has an IAM Role attached

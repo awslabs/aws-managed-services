@@ -1,5 +1,7 @@
-from enum import Enum
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
 
+from enum import Enum
 
 class ValidationResult(str, Enum):
     PASS = "Pass"
@@ -7,16 +9,13 @@ class ValidationResult(str, Enum):
     NOT_RUN = "Not Run"
     ERROR = "Error"
 
-
 class ValidationConfig(str, Enum):
     CUSTOM = "Custom"
     DEFAULT = "Default"
 
-
 class ValidationEnforcement(str, Enum):
     REQUIRED = "Required"
     RECOMMENDED = "Recommended"
-
 
 class Colors(str, Enum):
     HEADER = "\033[95m"

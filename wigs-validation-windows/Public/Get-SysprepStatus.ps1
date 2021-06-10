@@ -1,4 +1,7 @@
-﻿function Get-SysprepStatus {
+﻿# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+function Get-SysprepStatus {
     <#
     .SYNOPSIS
     Validates that common SysPrep problems will not be encountered during WIGS.

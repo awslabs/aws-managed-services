@@ -1,3 +1,6 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
 from pre_wigs_validation.enums import ValidationResult, Colors
 
 COLOR_MAP = {
