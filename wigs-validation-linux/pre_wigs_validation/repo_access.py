@@ -1,3 +1,6 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
 import shutil
 import subprocess
 
@@ -5,7 +8,6 @@ from pre_wigs_validation.enums import ValidationEnforcement, ValidationResult
 from pre_wigs_validation.instance import ValidationInstance
 from pre_wigs_validation.dataclasses import ValidationOutput
 from pre_wigs_validation.utils import check_validation_config, get_ld_library_orig
-
 
 class RepoAccess:
     """Validate that an instance has access to Yum Repositories."""

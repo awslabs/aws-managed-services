@@ -1,3 +1,6 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
 import shutil
 import subprocess
 
@@ -11,7 +14,6 @@ FAIL_NOT_RUNNING = "SSM Agent installed, but not running"
 ERROR_MESSAGE = "Unable to validate due to unsupported environment"
 V_ERROR_SYSTEMCTL = "Command 'systemctl' not in PATH"
 V_ERROR_STATUS = "Command 'status' not in PATH"
-
 
 class SSMAgent:
     """Validate that SSM Agent is installed and running on the instance."""

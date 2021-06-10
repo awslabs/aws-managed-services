@@ -1,4 +1,7 @@
-﻿function Get-RequiredDrivers {
+﻿# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+function Get-RequiredDrivers {
     <#
     .SYNOPSIS
     Validates that AWS PV and ENA drivers exist on the instance and are the correct version

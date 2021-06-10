@@ -1,3 +1,6 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
 import argparse
 import json
 import datetime
@@ -23,7 +26,7 @@ from pre_wigs_validation.ssm_agent import SSMAgent
 from warnings import warn
 
 ########################
-# validation master list
+# validation main list
 ########################
 VALIDATION_CLASSES = [
     EnhancedNetworking,

@@ -1,4 +1,7 @@
-﻿function Get-DHCPSetting {
+﻿# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+function Get-DHCPSetting {
     <#
     .SYNOPSIS
     Validates that DHCP is enabled on at least one NIC

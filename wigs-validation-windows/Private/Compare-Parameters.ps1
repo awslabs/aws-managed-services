@@ -1,4 +1,7 @@
-    function Compare-Parameters {
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+    
+function Compare-Parameters {
     <#
     .SYNOPSIS
     Compare the Parameters passed from the JSON to the defaults.

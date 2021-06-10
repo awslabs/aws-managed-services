@@ -1,4 +1,7 @@
-﻿function Get-RequiredAgents {
+﻿# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+function Get-RequiredAgents {
     <#
     .SYNOPSIS
     Validates that the required Amazon Agents are installed and running

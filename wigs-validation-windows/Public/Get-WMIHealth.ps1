@@ -1,4 +1,7 @@
-﻿function Get-WMIHealth {
+﻿# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+function Get-WMIHealth {
     <#
     .SYNOPSIS
     Validates that the Windows Management Instrumentation (WMI) system is operational
