@@ -23,6 +23,8 @@ class AMSResourceSupported(CloudFormationLintRule):
         valid_resource_types = [
             'AmazonMQ::*',
             'ApiGateway::*',
+            'ApiGatewayV2::*',
+            'AppSync::*',
             'Athena::*',
             'ApplicationAutoScaling::*',
             'AutoScaling::AutoScalingGroup',
@@ -30,6 +32,9 @@ class AMSResourceSupported(CloudFormationLintRule):
             'AutoScaling::LifecycleHook',
             'AutoScaling::ScalingPolicy',
             'AutoScaling::ScheduledAction',
+            'Batch::ComputeEnvironment',
+            'Batch::JobDefinition',
+            'Batch::JobQueue',
             'CertificateManager::*',
             'CloudFormation::CustomResource',
             'CloudFormation::Designer',
@@ -94,6 +99,7 @@ class AMSResourceSupported(CloudFormationLintRule):
             'Logs::SubscriptionFilter',
             'MediaConvert::*',
             'MediaStore::*',
+            'MSK::Cluster',
             'RDS::DBCluster',
             'RDS::DBClusterParameterGroup',
             'RDS::DBInstance',
@@ -117,11 +123,13 @@ class AMSResourceSupported(CloudFormationLintRule):
             'SecretsManager::*',
             'SecurityHub::*',
             'StepFunctions::*',
+            'Synthetics::Canary',
             'Transfer::*',
             'WAF::*',
             'WAFRegional::*',
             'WAFv2::*',
-            'WorkSpaces::*']
+            'WorkSpaces::*',
+        ]
 
         resources = cfn.get_resources()
 
