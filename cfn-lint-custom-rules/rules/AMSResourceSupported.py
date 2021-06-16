@@ -23,6 +23,8 @@ class AMSResourceSupported(CloudFormationLintRule):
         valid_resource_types = [
             'AmazonMQ::*',
             'ApiGateway::*',
+            'ApiGatewayV2::*',
+            'AppSync::*',
             'Athena::*',
             'ApplicationAutoScaling::*',
             'AutoScaling::AutoScalingGroup',
@@ -30,6 +32,9 @@ class AMSResourceSupported(CloudFormationLintRule):
             'AutoScaling::LifecycleHook',
             'AutoScaling::ScalingPolicy',
             'AutoScaling::ScheduledAction',
+            'Batch::ComputeEnvironment',
+            'Batch::JobDefinition',
+            'Batch::JobQueue',
             'CertificateManager::*',
             'CloudFormation::CustomResource',
             'CloudFormation::Designer',
@@ -94,6 +99,7 @@ class AMSResourceSupported(CloudFormationLintRule):
             'Logs::SubscriptionFilter',
             'MediaConvert::*',
             'MediaStore::*',
+            'MSK::Cluster',
             'RDS::DBCluster',
             'RDS::DBClusterParameterGroup',
             'RDS::DBInstance',
@@ -117,11 +123,13 @@ class AMSResourceSupported(CloudFormationLintRule):
             'SecretsManager::*',
             'SecurityHub::*',
             'StepFunctions::*',
+            'Synthetics::Canary',
             'Transfer::*',
             'WAF::*',
             'WAFRegional::*',
             'WAFv2::*',
-            'WorkSpaces::*']
+            'WorkSpaces::*',
+        ]
 
         resources = cfn.get_resources()
 
@@ -136,15 +144,17 @@ class AMSResourceSupported(CloudFormationLintRule):
 
             self.logger.debug("Validating %s as supported by AMS", resource_name)
 
-            resources_to_check.append(resource_values.get("Type").replace('AWS::', ''))
+            current_resource_type = resource_values.get("Type").replace("AWS::", "")
+            resources_to_check.append(current_resource_type)
 
             if valid_resource_types or resources_to_check:
                 resources = set(resources_to_check) - set(valid_resource_types)
 
                 if resources:
                     for resource in resources:
-                        if ((resource.split("::"))[0]) + \
-                                "::*" not in valid_resource_types and resources not in valid_resource_types:
+                        if (
+                            (resource.split("::"))[0]
+                        ) + "::*" not in valid_resource_types and resource == current_resource_type:
                             message = "AMS - {0} Resource not supported"
                             matches.append(RuleMatch(path, message.format("/".join(map(str, path)))))
 
