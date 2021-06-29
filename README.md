@@ -1,6 +1,6 @@
 ## AWS Managed Services
 
-Welcome to the AWS Managed Service (AMS) public repository. In this repository, we share AMS tools, patterns and guidelines with customers and partners. You can directly download and use the latest content or clone the repository using GIT.
+Welcome to the AWS Managed Service (AMS) public repository. This repository is to provide helper files associated with the [AMS Public Documentation](https://docs.aws.amazon.com/managedservices/). In this repository, we share AMS tools, patterns and guidelines with customers and partners. You can directly download and use the latest content or clone the repository using GIT.
 
 The following tools are published here:
 
