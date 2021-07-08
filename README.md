@@ -5,8 +5,8 @@ Welcome to the AWS Managed Service (AMS) public repository. This repository is t
 The following tools are published here:
 
 - **CFN Lint Custom Rules**
-- **Wigs Validation for Linux**
-- **WIGS Validation for Windows**
+
+- Stay tuned for more goodies...
 
 ## Security
 
