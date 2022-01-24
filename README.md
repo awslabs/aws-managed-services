@@ -6,6 +6,8 @@ The following tools are published here:
 
 - **CFN Lint Custom Rules**
 
+- **amscli Docker Container Image**
+
 - Stay tuned for more goodies...
 
 ## Security
