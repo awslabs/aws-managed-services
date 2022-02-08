@@ -2,6 +2,8 @@
 
 CFN Lint custom rules to validate CFN templates for ingestion into AWS Managed Services (AMS). The rules are used in combination with [CloudFormation Linter package](https://github.com/aws-cloudformation/cfn-python-lint) and will help you determine if your custom CloudFormation template can be ingested into an AMS managed account (using AMS Advanced).
 
+For more information around ingesting your existing CloudFormation templates to build resources in AMS Managed Landing Zone, refer to AMS Application Guide [here](https://docs.aws.amazon.com/managedservices/latest/appguide/ams-cfn-ingest.html).
+
 ## How to use it
 
 1. Install AWS CloudFormation Linter using the instructions [here](https://github.com/aws-cloudformation/cfn-lint#aws-cloudformation-linter).
